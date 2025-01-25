@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Writing Selectors Exercise</title>
+  <title>Styled Menu</title>
   <style>
-      /* missing id */
-      #menu{
+      
+      #menu {
           text-align: center;
+          background-color: #f9f9f9;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          max-width: 600px;
+          margin: 0 auto;
       }
 
-      /* missing class */
-      .class{
-          color: red;
+      
+      .item {
+          color: #2c3e50;
+          font-size: 1.8em;
+          font-weight: bold;
+          margin-bottom: 10px;
       }
 
-      /* missing class */
-      .picture{
-          border-radius: 5px;
+    
+      .picture {
+          border-radius: 10px;
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      /* missing class */
-      .description{
+   
+      .description {
           font-style: italic;
+          font-size: 1.1em;
+          color: #7f8c8d;
+          margin-top: 10px;
       }
   </style>
 </head>
 <body>
 <div id="menu">
-  <h1 class="item">Chicken Clay Pot</h1>
-  <img src="img/clay-pot.jpg" alt="clay pot" class="picture">
-  <p class="description">Crispy rice baked in clay pot topped with chicken and vegetables</p>
+  <h1 class="item">Beef Stew in Bread Bowl</h1>
+  <img src="img/beef-stew.jpg" alt="beef stew in bread bowl" class="picture">
+  <p class="description">Slow-cooked beef stew served in a crusty bread bowl, perfect for a cozy dinner.</p>
 </div>
 </body>
 </html>
