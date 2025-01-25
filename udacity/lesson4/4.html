@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slack Card</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <meta name="udacity-grader" content="tests.json">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #222;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      height: 475px;
+      width: 325px;
+      box-shadow: 0px 5px 15px 0px rgba(153, 153, 153, 0.5);
+      border-radius: 8px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .top {
+      height: 55%;
+      background-image: url('img.png');
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid #ddd;
+      padding: 16px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .name {
+      padding-top: 60%;
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+    .status {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-left: 4px;
+      border-radius: 50%;
+      background-color: #60D156;
+    }
+    .title {
+      margin-top: 8px;
+      font-size: 1.2em;
+    }
+    .middle {
+      height: 5%;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .bottom {
+      height: 40%;
+      border-radius: 0px 0px 8px 8px;
+      border: 1px solid #ddd;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .profile-action {
+      display: block;
+      width: 100%;
+      height: 40px;
+      font-size: 0.9em;
+      text-align: center;
+      font-family: inherit;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      border-radius: 4px;
+      transition: background-color 0.2s, color 0.2s, transform 0.1s;
+    }
+    .profile-action:hover {
+      background-color: #00A5D2;
+      color: #fff;
+      cursor: pointer;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="card">
+    <div class="top">
+      <h3 class="name">Udacity Student <span class="status"></span></h3>
+      <p class="title">Learner Extraordinaire</p>
+    </div>
+    <div class="middle">
+      <div class="time">12:34 PM local time</div>
+    </div>
+    <div class="bottom">
+     
+      <button class="profile-action">View Preferences</button>
+      <button class="profile-action">Account Settings</button>
+      <button class="profile-action">Edit Profile</button>
+      <button class="profile-action">View Files</button>
+      <button class="profile-action">Set Status to Away</button>
+    </div>
+  </div>
+</section>
+</body>
+</html>
