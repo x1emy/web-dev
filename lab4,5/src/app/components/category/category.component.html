@@ -1,0 +1,16 @@
+<head-component></head-component>
+
+<div class="container">
+  <div class="category-box">
+    <h1 class="category-title">Categories</h1>
+    <ul>
+      <li *ngFor="let category of categories" class="category-item">
+        <input type="checkbox" [checked]="category.choose" (change)="update(category)"> {{category.type}}
+      </li>
+    </ul>
+  </div>
+  <p class="likes-text">Number of likes: {{likes}}</p>
+  <hr class="divider">
+
+  <app-product-list [status]="show" (numLiked)="like($event)"> </app-product-list>
+</div>
